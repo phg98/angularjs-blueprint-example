@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular-Blueprint</title>
 </head>
-<body ng-app ng-init=" myName ='HG Park'">
-    {{myName}} is {{2014-1968}} years old.
-    <button ng-click="myName= 'John Doe'">click</button>
-
+<body ng-controller="PeopleController">
+    {{person.name}} lives in {{person.city}}
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" type ="text/javascript "></script>
+    <script>
+        function PeopleController($scope) {
+            $scope.person = {
+                name: "HG Park",
+                city: "Seoul"
+            }
+        }
+    </script>
 </body>
 </html>
