@@ -30,3 +30,15 @@ body {
     border-bottom: thin solid #ccc;
     padding: 10px;
 }
+
+button{
+    background: #080;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: thin solid #060;
+}
+
+button:hover{
+    background: #0A0;
+}
