@@ -10,10 +10,17 @@
 <body ng-controller="PeopleController">
     <h1>Address Book</h1>
     <div class="wrapper">
-        <div class="contact-item" ng-repeat="person in people">
+        <div class="contact-item" ng-repeat="person in people | orderBy: 'name'">
             <div>{{person.name}} - {{person.phone}}</div>
             <span>{{person.city}}</span>
         </div>
+    </div>
+    <div class="wrapper">
+        <h2>Add a Contact</h2>
+        Name: <input type="text" ng-model="newPerson.name"></input>
+        Phone: <input type="text" ng-model="newPerson.phone"></input>
+        City: <input type="text" ng-model="newPerson.city"></input>
+        <button ng-click="Save()">Save</button>
     </div>
     
 
