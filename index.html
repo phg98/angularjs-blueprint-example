@@ -7,16 +7,16 @@
     <title>Angular-Blueprint</title>
 </head>
 <body ng-controller="PeopleController">
-    {{person.name}} lives in {{person.city}}
+    <h1>Address Book</h1>
+    <div>
+        <div ng-repeat="person in people">
+            <div>{{person.name}} - {{person.phone}}</div>
+            <span>{{person.city}}</span>
+        </div>
+    </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" type ="text/javascript "></script>
-    <script>
-        function PeopleController($scope) {
-            $scope.person = {
-                name: "HG Park",
-                city: "Seoul"
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
