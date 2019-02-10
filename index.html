@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular-Blueprint</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-controller="PeopleController">
     <h1>Address Book</h1>
-    <div>
-        <div ng-repeat="person in people">
+    <div class="wrapper">
+        <div class="contact-item" ng-repeat="person in people">
             <div>{{person.name}} - {{person.phone}}</div>
             <span>{{person.city}}</span>
         </div>
