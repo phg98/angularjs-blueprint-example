@@ -10,6 +10,7 @@
  */
 angular
   .module('hlApp', [
+    'ui.bootstrap',
     'ngAnimate',
     'ngCookies',
     'ngResource',
