@@ -10,13 +10,14 @@
  */
 angular
   .module('hlApp', [
-    'ui.bootstrap',
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    //'ngGrid',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
