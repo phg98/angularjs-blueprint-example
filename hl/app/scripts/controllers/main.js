@@ -29,6 +29,26 @@ angular.module('hlApp')
         text:'10 Locations for Nature Lovers!'
       }
     ];
+
+    // Model for 3 contents block
+    var baseURL = "http://lorempixel.com/200/200/";
+    $scope.content = [
+      {
+        img:baseURL+'people',
+        title: 'About Us',
+        summary:'We are good, we are the best out there'
+      },
+      {
+        img:baseURL+'business',
+        title: 'Our Services',
+        summary:'We offer advice on staying Healthly, what to eat ... what are the best exercises for you etc.'
+      },
+      {
+        img:baseURL+'transport',
+        title:'Contact Us',
+        summary:'#111, Good Health Blvd, Happy Place, Antartica, zip-432167'
+      }
+    ];
   });
 
 
